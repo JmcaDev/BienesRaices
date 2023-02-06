@@ -1,8 +1,21 @@
 import express from "express"
 import usuarioRoutes from "./routes/usuarioRoutes.js"
+import db from "./config/db.js"
 
 //Crear la api
 const app = express()
+
+//Conexion base de datos
+try {
+    await db.authenticate()
+    db.sync()
+    console.log("Conexion correcta a la base de datos")
+} catch (error) {
+    console.log(error)
+}
+
+//Habilitar lectura de datos de formularios
+app.use(express.urlencoded({extended: true}))
 
 //Habilitar pug
 app.set("view engine", "pug")
