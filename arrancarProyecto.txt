@@ -1,0 +1,5 @@
+Arrancar api
+1-)Abrir terminal y colocar npm run dev
+
+Arrancar Tailwind
+1-)Abrir terminal y colocar npm run css
