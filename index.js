@@ -2,6 +2,7 @@ import express from "express"
 import csrf from "csurf"
 import cookieParser from "cookie-parser"
 import usuarioRoutes from "./routes/usuarioRoutes.js"
+import propiedadesRoutes from "./routes/propiedadesRoutes.js"
 import db from "./config/db.js"
 
 //Crear la api
@@ -33,6 +34,7 @@ app.set("views", "./views")
 
 //Routing
 app.use("/auth", usuarioRoutes)
+app.use("/", propiedadesRoutes)
 
 //Carpeta publica: Archivos estaticos css, javascript
 app.use(express.static("public"))

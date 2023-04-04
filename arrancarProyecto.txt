@@ -1,5 +1,11 @@
 Arrancar api
-1-)Abrir terminal y colocar npm run dev
+1-)Abrir terminal y colocar npm run server
 
 Arrancar Tailwind
 1-)Abrir terminal y colocar npm run css
+
+Arrancar webpack
+1-)Abrir terminal y colocar npm run js
+
+Arrancar webpack y tailwind juntos
+1-)Abrir terminal y colocar npm run dev
