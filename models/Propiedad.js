@@ -20,7 +20,7 @@ const Propiedad = db.define("propiedades", {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    estacionamineto: {
+    estacionamiento: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
